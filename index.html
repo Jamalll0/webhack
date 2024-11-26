@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace dengan 10 Produk</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Profil */
+        .profile {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        .profile h2 {
+            margin-top: 15px;
+            color: #007BFF;
+        }
+
+        .profile p {
+            color: #555;
+            font-size: 1rem;
+        }
+
+        /* Daftar Produk */
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .product-card {
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .product-price {
+            font-size: 1.1rem;
+            color: #007BFF;
+            margin-top: 5px;
+        }
+
+        .product-card button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .product-card button:hover {
+            background-color: #218838;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 50px;
+        }
+
+        /* Responsif */
+        @media (max-width: 1200px) {
+            .product-list {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        @media (max-width: 900px) {
+            .product-list {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .product-list {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            header nav {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Marketplace</a>
+        <a href="#">Contact</a>
+        <a href="#">Cart</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <!-- Profil Pengguna -->
+    <div class="profile">
+        <img src="qris.webp" alt="Foto Profil">
+        <h2>BANGSALL</h2>
+        <p>Web Developer | JigsunnXd | Marketplace</p>
+    </div>
+
+    <!-- Daftar Produk -->
+    <h1>Marketplace</h1>
+    <div class="product-list">
+        <!-- Produk 1 -->
+        <div class="product-card">
+            <img src="a.png" alt="Produk 1">
+            <h3 class="product-name">Hack CrystalPvP</h3>
+            <p class="product-price">Safety Share Screen, Change Keybinds</p>
+            <button>50.000</button>
+        </div>
+
+        <!-- Produk 2 -->
+        <div class="product-card">
+            <img src="avaricev3.png" alt="Produk 2">
+            <h3 class="product-name">Avarice V3</h3>
+            <p class="product-price">Senjata Legends
+                Keep Inventory +15.000
+            </p>
+            <button>80.000</button>
+        </div>
+
+        <!-- Produk 3 -->
+        <div class="product-card">
+            <img src="envy.png" alt="Produk 3">
+            <h3 class="product-name">Envy V1</h3>
+            <p class="product-price">Senjata Legends
+                Keep Inventory +15.000
+            </p>
+            <button>70.000</button>
+        </div>
+
+        <!-- Produk 4 -->
+        <div class="product-card">
+            <img src="doomcustom.png" alt="Produk 4">
+            <h3 class="product-name">Doombringer Custom</h3>
+            <p class="product-price">Senjata Legends
+                Keep Inventory +15.000
+            </p>
+            <button>80.000</button>
+        </div>
+
+        <!-- Produk 5 -->
+        <div class="product-card">
+            <img src="armor.png" alt="Produk 5">
+            <h3 class="product-name">Armor</h3>
+            <p class="product-price">Armor Keep Inventory + 5heart</p>
+            <button>40.000</button>
+        </div>
+
+        <!-- Produk 6 -->
+        <div class="product-card">
+            <img src="shark anchor.png" alt="Produk 6">
+            <h3 class="product-name">Shark Anchor</h3>
+            <p class="product-price">Limited Edition
+                120.000 Sudah KeepInventory
+            </p>
+            <button>120.000</button>
+        </div>
+    </div>
+</div>
+<body>
+    <h1>Semoga Terhibur</h1>
+
+    <!-- Elemen video -->
+    <video width="640" height="360" controls>
+        <source src="hack.mp4" type="video/mp4">
+        Browser Anda tidak mendukung elemen video.
+    </video>
+</body>
+<footer>
+    <p>&copy; 2024 Marketplace. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
